@@ -1,0 +1,165 @@
+.kuzon {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    background: linear-gradient(90deg, #00A3DA -59.57%, #8FD1E9 159.57%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+
+  &::before {
+    background: url(../img/group.png) no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-size: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+  }
+}
+
+.kuzon__wrapper {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+.kuzon__logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 125px;
+  padding-top: 50px;
+
+
+  .kuzon__logo-link {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    margin-right: 29px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #E3672A -7.29%, #D8232A 107.29%);
+    position: relative;
+    &::after {
+      top: 8px;
+      left: 10px;
+      position: absolute;
+      content: "";
+      background: url(../img/logo.png) 50% 50% no-repeat;
+      width: 45px;
+      height: 45px;
+      background-size: 45px;
+    }
+
+  }
+
+  .kuzon__logo-text {
+    display: flex;
+    flex-direction: column;
+    & a {
+      display: inline-block;
+      background: url(../img/logo_title.png) 50% 50% no-repeat;
+      background-size: 145px;
+      width: 145px;
+      height: 20px;
+      margin-bottom: 10px;
+    }
+
+    & span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 100%;
+      color:white;
+      max-width: 232px;
+    }
+  }
+}
+
+
+.kuzon__desc-block {
+  & .kuzon__title {
+    font-family: $montalt;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 100%;
+    margin-bottom: 65px;
+  }
+
+  & .kuzon__desc {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 80px;
+    display: inline-block;
+  }
+}
+
+.kuzon__eleph-title {
+  margin-bottom: 89px;
+  & span {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    background-color: #F9A616;
+    padding: 0 26px 0 8px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: url(../img/elephant.png) 50% 50% no-repeat;
+      width: 50px;
+      height: 50px;
+      background-size: 51px;
+      top: -5px;
+      right: -36px;
+    }
+  }
+}
+
+.kuzon__timer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 560px;
+  padding-bottom: 40px;
+  .kuzon__timer-block {
+    display: flex;
+    flex-direction: column;
+
+    .kuzon__time {
+      position: absolute;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 70px;
+      line-height: 100%;
+      font-family: $montalt;
+    }
+
+    .kuzon__time-date {
+      font-style: normal;
+      font-weight: normal;
+      padding-top: 9px;
+      margin-top: 80px;
+      font-size: 20px;
+      line-height: 100%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.kuzon__image {
+  img {
+    position: absolute;
+    left: -100px;
+  }
+}

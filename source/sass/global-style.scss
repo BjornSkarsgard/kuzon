@@ -1,0 +1,32 @@
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .overflow {
+        overflow: hidden;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        clip: rect(0 0 0 0);
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
